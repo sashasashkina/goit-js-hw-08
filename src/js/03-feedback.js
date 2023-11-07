@@ -17,7 +17,7 @@ function onFormInput(event) {
   //   const message = formData.message.value;
   //   const dataToSave = { email, message };
   formData[event.target.name] = event.target.value.trim();
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
 
 function onFormSubmit(event) {
